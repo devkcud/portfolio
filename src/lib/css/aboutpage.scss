@@ -1,0 +1,32 @@
+@use './colors.scss' as color;
+
+div#about {
+  min-height: calc(100vh - 2rem - 4rem);
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  align-items: center;
+}
+
+div#about div {
+  max-width: 712px;
+
+  padding-top: 2rem;
+  padding-inline: 2rem;
+
+  text-align: justify;
+}
+
+div#about .header {
+  margin-bottom: 1rem;
+}
+
+div#about .header::before {
+  content: '# ';
+
+  color: color.$green;
+  font-size: smaller;
+  font-weight: 600;
+}

@@ -1,0 +1,102 @@
+@use './colors.scss' as color;
+
+main {
+  margin-inline: 1rem;
+
+  min-height: calc(100vh - 2rem - 4rem);
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+div#who {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 2rem;
+}
+
+div#who > img#my-avatar {
+  --s: 150px;
+
+  object-fit: cover;
+
+  width: var(--s);
+  height: var(--s);
+
+  border-radius: 10px;
+}
+
+h1#presentation-header {
+  font-size: 4rem;
+}
+
+p#presentation-subtitle {
+  font-size: 1.2rem;
+}
+
+ul#tecnology-wheel {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+}
+
+ul#tecnology-wheel img {
+  width: 40px;
+  transition: all 0.1s ease-in-out;
+}
+
+ul#tecnology-wheel li {
+  user-select: none;
+  cursor: default;
+}
+
+ul#tecnology-wheel img:hover {
+  scale: 1.2;
+}
+
+ul#quicklinks {
+  height: 12vh;
+
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+ul#quicklinks > li a {
+  padding: 1rem;
+
+  background-color: color.$black;
+  color: color.$white;
+
+  box-shadow: 0 0 10px color.$black;
+
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 10px;
+
+  transition: all 0.1s ease;
+}
+
+
+ul#quicklinks > li a:hover {
+  color: color.$blue
+}
