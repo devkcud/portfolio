@@ -8,11 +8,11 @@
     { name: 'custom:astro', aliases: [], invert: false, type: 'frontend' },
     { name: 'svelte', aliases: ['sveltekit'], invert: false, type: 'frontend' },
     { name: 'react', aliases: ['reactjs'], invert: false, type: 'frontend' },
-    { name: 'nextjs', aliases: [], invert: true, type: 'frontend' },
+    { name: 'nextjs', aliases: ['react'], invert: true, type: 'frontend' },
     { name: 'html5', aliases: [], invert: false, type: 'frontend' },
     { name: 'php', aliases: [], invert: false, type: 'backend' },
     { name: 'java', aliases: [], invert: false, type: 'backend' },
-    { name: 'go', aliases: [], invert: false, type: 'backend' },
+    { name: 'go', aliases: ['golang'], invert: false, type: 'backend' },
     { name: 'rust-plain', aliases: [], invert: true, type: 'backend' },
     { name: 'javascript', aliases: ['js', 'ecmascript', 'nodejs'], invert: false, type: 'backend' },
     { name: 'typescript', aliases: ['ts'], invert: false, type: 'backend' },
@@ -47,6 +47,18 @@
   onMount(() => {
     document.documentElement.style.setProperty('--slide-count', `${images.length / 2}`);
   });
+
+  let filteredImages: { name: string; aliases: string[]; invert: boolean; type: string }[];
+
+  $: filteredImages = images.slice(0, images.length / 2).filter((image) => {
+    if (search === '') return false;
+
+    return (
+      image.name.toLowerCase().includes(search.toLowerCase()) ||
+      image.aliases.some((alias) => alias.toLowerCase().includes(search.toLowerCase())) ||
+      image.type.toLowerCase().includes(search.toLowerCase())
+    );
+  });
 </script>
 
 <svelte:head>
@@ -55,7 +67,7 @@
 
 <Button style="margin-bottom: 4rem" href="/" nobg icon={HomeSolid}>Go home</Button>
 
-<div class="rotate-10 w-full overflow-hidden sider-blur">
+<div class="rotate-7 w-full overflow-hidden sider-blur">
   <div
     class="inline-flex gap-4 all:w-16 all:h-16 all:object-contain all:transition hover:all:scale-[1.1] animate-slide"
   >
@@ -106,20 +118,15 @@
     />
   </div>
 
-  <div class="m-8 flex justify-center flex-wrap gap-4 all:w-16 all:h-16 all:object-contain">
-    {#each images.slice(0, images.length / 2) as image}
-      {#if search !== ''}
-        {#if image.name.toLowerCase().includes(search.toLowerCase()) || image.type
-            .toLowerCase()
-            .includes(search.toLowerCase()) || image.aliases.some((alias) => alias
-              .toLowerCase()
-              .includes(search.toLowerCase()))}
-          <LanguageImage
-            name={image.name}
-            class={`${image.invert ? 'invert' : ''} transition hover:scale-[1.5]`}
-          />
-        {/if}
-      {/if}
+  <div class="m-8 flex justify-center flex-wrap gap-4 all:w-12 all:h-12 all:object-contain">
+    {#each filteredImages as image}
+      <LanguageImage
+        name={image.name}
+        class={`${image.invert ? 'invert' : ''} transition hover:scale-[1.2]`}
+      />
     {/each}
+    {#if filteredImages.length === 0}
+      <p class="text-center italic op-30 w-full">{search === '' ? 'Type in the box to begin search' : '0 results'}</p>
+    {/if}
   </div>
 </div>
