@@ -11,33 +11,40 @@
     { name: 'nextjs', aliases: ['react'], invert: true, type: 'frontend' },
     { name: 'html5', aliases: [], invert: false, type: 'frontend' },
     { name: 'php', aliases: [], invert: false, type: 'backend' },
-    { name: 'java', aliases: [], invert: false, type: 'backend' },
     { name: 'go', aliases: ['golang'], invert: false, type: 'backend' },
     { name: 'rust-plain', aliases: [], invert: true, type: 'backend' },
+    { name: 'express', aliases: ['js'], invert: true, type: 'backend' },
+    { name: 'flask', aliases: ['python'], invert: true, type: 'backend' },
+    { name: 'nodejs', aliases: ['js'], invert: false, type: 'backend' },
     { name: 'javascript', aliases: ['js', 'ecmascript', 'nodejs'], invert: false, type: 'backend' },
     { name: 'typescript', aliases: ['ts'], invert: false, type: 'backend' },
     { name: 'python', aliases: [], invert: false, type: 'backend' },
-    { name: 'firebase-plain', aliases: ['firestore'], invert: false, type: 'db' },
+    { name: 'firebase-plain', aliases: ['firestore', 'fireauth'], invert: false, type: 'db' },
     { name: 'mongodb', aliases: ['mongoose'], invert: false, type: 'db' },
     { name: 'mysql', aliases: [], invert: false, type: 'db' },
     { name: 'postgresql', aliases: [], invert: false, type: 'db' },
     { name: 'docker', aliases: [], invert: false, type: 'tool' },
     { name: 'linux', aliases: [], invert: false, type: 'system' },
+    { name: 'bash', aliases: ['shell'], invert: false, type: 'system' },
     { name: 'git', aliases: [], invert: false, type: 'tool' },
     { name: 'github', aliases: [], invert: true, type: 'tool' },
-    { name: 'gitlab', aliases: [], invert: true, type: 'tool' },
+    { name: 'gitlab', aliases: [], invert: false, type: 'tool' },
     { name: 'css3', aliases: [], invert: false, type: 'frontend' },
     { name: 'sass', aliases: ['scss'], invert: false, type: 'frontend' },
     { name: 'tailwindcss-plain', aliases: [], invert: false, type: 'frontend' },
     { name: 'bootstrap', aliases: ['css'], invert: false, type: 'frontend' },
     { name: 'custom:unocss', aliases: [], invert: false, type: 'frontend' },
+    { name: 'jest-plain', aliases: [], invert: false, type: 'tool' },
     { name: 'eslint', aliases: [], invert: false, type: 'tool' },
     { name: 'custom:prettier', aliases: [], invert: false, type: 'tool' },
     { name: 'vim', aliases: [], invert: false, type: 'tool' },
     { name: 'custom:nvim', aliases: ['neovim'], invert: false, type: 'tool' },
     { name: 'vscode', aliases: ['visual studio code', 'vs code'], invert: false, type: 'tool' },
     { name: 'markdown', aliases: ['mdx'], invert: true, type: 'tool' },
-    { name: 'custom:gml', aliases: ['gamemaker', 'game maker'], invert: true, type: 'tool' }
+    { name: 'figma', aliases: [], invert: false, type: 'tool' },
+    { name: 'gimp', aliases: [], invert: false, type: 'tool' },
+    { name: 'custom:gml', aliases: ['gamemaker', 'game maker'], invert: true, type: 'tool' },
+    { name: 'godot', aliases: [], invert: false, type: 'tool' },
   ];
 
   let search: string = '';
@@ -69,7 +76,7 @@
 
 <div class="rotate-7 w-full overflow-hidden sider-blur">
   <div
-    class="inline-flex gap-4 all:w-16 all:h-16 all:object-contain all:transition hover:all:scale-[1.1] animate-slide"
+    class="inline-flex gap-8 all:w-16 all:h-16 all:object-contain all:transition hover:all:scale-[1.1] animate-slide"
   >
     {#each images as image}
       <LanguageImage name={image.name} class={image.invert ? 'invert' : ''} />
@@ -82,7 +89,8 @@
   skills.
   <br />
   From <span class="text-purple">Back-end</span> to
-  <span class="text-purple">Front-end</span>.
+  <span class="text-purple">Front-end</span> to
+  <span class="text-purple">Design</span>.
 </h1>
 
 <div class="m-4">

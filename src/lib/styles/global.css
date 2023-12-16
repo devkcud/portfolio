@@ -86,7 +86,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc((64px + 1rem) * (var(--slide-count) * -1)));
+    transform: translateX(calc((64px + 2rem) * (var(--slide-count) * -1)));
   }
 }
 
