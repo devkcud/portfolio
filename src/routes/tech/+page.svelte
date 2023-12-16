@@ -29,7 +29,7 @@
     { name: 'css3', aliases: [], invert: false, type: 'frontend' },
     { name: 'sass', aliases: ['scss'], invert: false, type: 'frontend' },
     { name: 'tailwindcss-plain', aliases: [], invert: false, type: 'frontend' },
-    { name: 'bootstrap', aliases: [], invert: false, type: 'frontend' },
+    { name: 'bootstrap', aliases: ['css'], invert: false, type: 'frontend' },
     { name: 'custom:unocss', aliases: [], invert: false, type: 'frontend' },
     { name: 'eslint', aliases: [], invert: false, type: 'tool' },
     { name: 'custom:prettier', aliases: [], invert: false, type: 'tool' },
