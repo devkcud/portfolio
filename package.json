@@ -30,5 +30,8 @@
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write ."
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@svelte-plugins/tooltips": "^2.0.1"
+  }
 }

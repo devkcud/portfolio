@@ -23,6 +23,10 @@
   animation: shake 0.2s infinite;
 }
 
+.animate-pulse {
+  animation: pulse 3s infinite;
+}
+
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
@@ -56,5 +60,15 @@
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
   }
 }
