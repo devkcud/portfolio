@@ -3,6 +3,10 @@
   import { HomeSolid } from 'flowbite-svelte-icons';
 </script>
 
+<svelte:head>
+  <title>About me</title>
+</svelte:head>
+
 <div class="my-6 mx-2">
   <Button href="/" nobg icon={HomeSolid} style="display: block; margin: 0 auto;">Go home</Button>
 

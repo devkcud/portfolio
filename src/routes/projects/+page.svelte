@@ -73,6 +73,10 @@
   ];
 </script>
 
+<svelte:head>
+  <title>Projects</title>
+</svelte:head>
+
 <section class="w-full min-h-screen p-2 flex flex-col items-center justify-center">
   <Button href="/" nobg icon={HomeSolid}>Go home</Button>
 
