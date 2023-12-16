@@ -100,7 +100,7 @@
 
     <input
       type="text"
-      placeholder="Search..."
+      placeholder="Search by name"
       bind:value={search}
       class="w-fit px-4 py-2 border-none border-b-solid border-b-2 border-b-purple outline-none bg-transparent text-purple"
     />
