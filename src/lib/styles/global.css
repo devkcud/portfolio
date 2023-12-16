@@ -1,0 +1,20 @@
+.animate-underline {
+  position: relative;
+}
+
+.animate-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom left;
+  transition: width 0.25s ease-out;
+}
+
+.animate-underline:hover::after {
+  transform-origin: bottom left;
+  width: 100%;
+}
