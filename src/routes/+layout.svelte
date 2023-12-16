@@ -3,6 +3,6 @@
   import '$lib/styles/global.css';
 </script>
 
-<main class="min-h-screen flex justify-center items-center p-4">
+<main class="min-h-screen flex flex-col justify-center items-center">
   <slot />
 </main>
