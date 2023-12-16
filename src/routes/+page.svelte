@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { CloudArrowUpOutline, UserRemoveSolid, LinkSolid as Link } from 'flowbite-svelte-icons';
   import Button from '$lib/components/Button.svelte';
 
   const github = 'https://github.com/devkcud';
