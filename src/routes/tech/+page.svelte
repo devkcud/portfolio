@@ -86,7 +86,7 @@
 
   <p>
     Working as a <span class="text-purple">Tech Lead</span> for
-    <span class="text-purple">Faísca Científica</span> @ Unicamp.
+    <span class="text-purple">Faísca Científica</span> @ <span class="text-purple">Unicamp</span>.
   </p>
 </div>
 
