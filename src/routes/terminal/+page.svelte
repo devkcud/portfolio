@@ -2,6 +2,7 @@
   interface Command {
     description: string;
     args?: string[];
+    allowHtml?: boolean;
     fn?: (flags: string[], args: string[]) => string | void;
   }
 
@@ -16,8 +17,17 @@
   const definedCommands: { [key: string]: Command } = {
     help: {
       description: 'Shows a list of commands',
+      allowHtml: true,
       fn: () => {
-        return Object.keys(definedCommands).join(', ');
+        let commandsString = '';
+
+        Object.entries(definedCommands).forEach(([name, command]) => {
+          commandsString += `${name} ${(command.args || []).join(' ')}<br />${
+            command.description
+          }<br /><br />`;
+        });
+
+        return commandsString;
       }
     },
     clear: {
@@ -30,6 +40,10 @@
       description: 'Prints a message',
       args: ['message'],
       fn: (_: string[], args: string[]) => args.join(' ')
+    },
+    exit: {
+      description: 'Exits the terminal',
+      fn: () => (window.location.href = '/')
     }
   };
 
@@ -39,6 +53,13 @@
   let beforeChangeCommandIndex: string = '';
 
   function onkeydown(e: KeyboardEvent) {
+    if (e.ctrlKey && e.key === 'l') {
+      e.preventDefault();
+
+      commands = [];
+      return;
+    }
+
     if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') {
       return;
     }
@@ -137,20 +158,30 @@
         return `Usage: ${command.name} ${commandHandler.args?.join(' ')}`;
       }
 
-      const e = commandHandler.fn(command.flags, command.arguments);
+      let e = commandHandler.fn(command.flags, command.arguments);
 
       if (typeof e === 'string') {
+        if (!commandHandler.allowHtml) {
+          e = e.replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+
+          return e;
+        }
+
         return e;
       }
     }
   }
 </script>
 
+<svelte:head>
+  <title>Terminal</title>
+</svelte:head>
+
 <section class="w-screen min-h-screen all:fw-400 all:text-xl p-4 flex flex-col gap-2">
   {#each commands as command}
     <div>
       <p><span class="text-purple fw-800">guest@local:</span> {command}</p>
-      <p>{handleCommand(parseCommand(command))}</p>
+      <p>{@html handleCommand(parseCommand(command))}</p>
     </div>
   {/each}
 
@@ -163,6 +194,7 @@
       on:keypress={onkeypress}
       on:keydown={onkeydown}
       class="bg-transparent color-white outline-none border-none w-full"
+      autofocus
     />
   </div>
 </section>
