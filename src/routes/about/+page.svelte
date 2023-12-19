@@ -27,7 +27,7 @@
 
       <p class="line-height-relaxed">
         💼 I'm currently working as a
-        <span class="text-purple">Hybrid Tech Lead + Full-stack developer</span> at a
+        <span class="text-purple">Hybrid Tech Lead + Full-stack developer</span> for a
         <span class="text-purple">university</span> called <span class="text-purple">Unicamp</span>
         🔥, where I work with a team of very talented full-stack developers. 📊 I organize, guide and
         support in the software development process to the best of my ability. 🗞️ I also mantain the
