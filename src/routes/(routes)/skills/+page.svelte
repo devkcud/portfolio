@@ -3,7 +3,6 @@
   import Divider from '$lib/components/Divider.svelte';
   import LanguageImage from '$lib/components/LanguageImage.svelte';
   import Purple from '$lib/components/Purple.svelte';
-  import { HomeSolid } from 'flowbite-svelte-icons';
   import { onMount } from 'svelte';
 
   type Image = {
@@ -83,65 +82,61 @@
   <title>Skills</title>
 </svelte:head>
 
-<section class="max-w-3/4 my-4">
-  <Button href="/" nobg icon={HomeSolid} style="display: block; margin: 0 auto;">Go home</Button>
-
-  <div class="rotate-7 w-full my-16 overflow-hidden sider-blur">
-    <div class="inline-flex gap-8 animate-slide">
-      {#each images as image}
-        <LanguageImage name={image.name} class={image.invert ? 'invert' : ''} />
-      {/each}
-    </div>
+<div class="rotate-7 w-full my-16 overflow-hidden sider-blur">
+  <div class="inline-flex gap-8 animate-slide">
+    {#each images as image}
+      <LanguageImage name={image.name} class={image.invert ? 'invert' : ''} />
+    {/each}
   </div>
+</div>
 
-  <section class="w-fit mx-auto flex flex-col items-center">
-    <article>
-      <h2 class="text-3xl text-center">Over <Purple>{images.length / 2}</Purple> skills.</h2>
+<section class="w-fit mx-auto flex flex-col items-center">
+  <article>
+    <h2 class="text-3xl text-center">Over <Purple>{images.length / 2}</Purple> skills.</h2>
+    <p>
+      From <Purple>Back-end</Purple> to <Purple>Front-end</Purple> to <Purple>Design</Purple>.
+    </p>
+  </article>
+
+  <Divider />
+
+  <article class="m-4">
+    <p>
+      Studing since <Purple>2014</Purple>; mostly <Purple>Back-end</Purple> and
+      <Purple>Security</Purple>.
+    </p>
+
+    <p>More than <Purple>1.000</Purple> contributions on <Purple>GitHub</Purple> yearly.</p>
+  </article>
+
+  <Divider />
+
+  <article>
+    <div class="mx-auto flex flex-wrap justify-center items-center gap-2">
       <p>
-        From <Purple>Back-end</Purple> to <Purple>Front-end</Purple> to <Purple>Design</Purple>.
-      </p>
-    </article>
-
-    <Divider />
-
-    <article class="m-4">
-      <p>
-        Studing since <Purple>2014</Purple>; mostly <Purple>Back-end</Purple> and
-        <Purple>Security</Purple>.
+        Can't see a <Purple>specific skill</Purple>?
       </p>
 
-      <p>More than <Purple>1.000</Purple> contributions on <Purple>GitHub</Purple> yearly.</p>
-    </article>
+      <input
+        type="text"
+        placeholder="Search by name"
+        bind:value={search}
+        class="w-[118px] bg-transparent text-purple border-none outline-none p-2"
+      />
+    </div>
 
-    <Divider />
-
-    <article>
-      <div class="mx-auto flex flex-wrap justify-center items-center gap-2">
-        <p>
-          Can't see a <Purple>specific skill</Purple>?
+    <ul class="m-8 flex justify-center flex-wrap gap-4 list-none">
+      {#if filteredImages.length === 0}
+        <p class="text-center op-30">
+          {search === '' ? 'Type in the box to begin search' : `0 results found for "${search}"`}
         </p>
-
-        <input
-          type="text"
-          placeholder="Search by name"
-          bind:value={search}
-          class="w-[118px] bg-transparent text-purple border-none outline-none p-2"
-        />
-      </div>
-
-      <ul class="m-8 flex justify-center flex-wrap gap-4 list-none">
-        {#if filteredImages.length === 0}
-          <p class="text-center op-30">
-            {search === '' ? 'Type in the box to begin search' : `0 results found for "${search}"`}
-          </p>
-        {:else}
-          {#each filteredImages as image}
-            <li>
-              <LanguageImage name={image.name} class={image.invert ? 'invert' : ''} />
-            </li>
-          {/each}
-        {/if}
-      </ul>
-    </article>
-  </section>
+      {:else}
+        {#each filteredImages as image}
+          <li>
+            <LanguageImage name={image.name} class={image.invert ? 'invert' : ''} />
+          </li>
+        {/each}
+      {/if}
+    </ul>
+  </article>
 </section>

@@ -79,26 +79,22 @@
   <title>Projects</title>
 </svelte:head>
 
-<section class="w-full min-h-screen p-2 flex flex-col items-center justify-center">
-  <Button href="/" nobg icon={HomeSolid}>Go home</Button>
-
-  <section
-    class="w-full grid grid-cols-[repeat(auto-fit,minmax(500px,1fr))] justify-center gap-6 mx-16 my-16"
-  >
-    {#each projects as project}
-      <Project
-        name={project.name}
-        about={project.about}
-        langs={project.langs}
-        deploy={project.deploy}
-      />
-    {/each}
-  </section>
-
-  <p class="italic op-30">
-    Explore more on my <a
-      href="https://github.com/devkcud"
-      class="color-blue-500 underline not-italic">GitHub</a
-    >...
-  </p>
+<section
+  class="w-full grid grid-cols-[repeat(auto-fit,minmax(500px,1fr))] justify-center gap-6 mx-16 my-16"
+>
+  {#each projects as project}
+    <Project
+      name={project.name}
+      about={project.about}
+      langs={project.langs}
+      deploy={project.deploy}
+    />
+  {/each}
 </section>
+
+<p class="italic op-30 text-center">
+  Explore more on my <a
+    href="https://github.com/devkcud"
+    class="color-blue-500 underline not-italic">GitHub</a
+  >...
+</p>
