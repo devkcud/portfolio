@@ -30,3 +30,12 @@
 </script>
 
 <img src={lang.src} alt={lang.alt} {...$$restProps} loading="lazy" />
+
+<style>
+  img {
+    object-fit: contain;
+
+    width: 64px;
+    height: 64px;
+  }
+</style>

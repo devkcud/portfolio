@@ -1,3 +1,5 @@
+<!-- Eventually, I will rewrite this completely. -->
+
 <script>
   import { HomeSolid } from 'flowbite-svelte-icons';
   import Button from '$lib/components/Button.svelte';

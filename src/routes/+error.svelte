@@ -5,18 +5,16 @@
 </script>
 
 <section class="flex flex-col">
-  <p>Oh, no! It's a</p>
-  <h1 class="color-red-800 text-5xl my-4">{$page.status} error page.</h1>
-  <p class="w-fit ml-auto">Everybody, run!</p>
-
-  <p class="w-fit mx-auto mt-16 op-30 italic">{$page.url} &gt; {$page.error?.message}</p>
+  <p>Oh,</p>
+  <h1 class="color-red-800 text-5xl my-4">ERROR {$page.status}</h1>
+  <p class="ml-auto">{$page.error?.message}</p>
 
   <Button
     nobg
     icon={ChevronLeftSolid}
-    style="margin: 1rem auto"
+    style="margin: 1rem auto; margin-top: 4rem;"
     onclick={() => window.history.back()}
   >
-    Back
+    Go Back
   </Button>
 </section>
