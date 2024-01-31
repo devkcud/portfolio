@@ -80,7 +80,7 @@
 </script>
 
 <svelte:head>
-  <title>Technologies</title>
+  <title>Skills</title>
 </svelte:head>
 
 <section class="max-w-3/4 my-4">
