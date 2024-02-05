@@ -45,7 +45,7 @@
     <p class="line-height-relaxed">
       🥷 Even though I do all of that, I'm still a person that likes chilling sometimes. 🎥 I'm into
       all kinda of stuff, like <Purple>games and movies/series</Purple>. I'm currently playing
-      <Purple>Ready or Not</Purple> 🎮.
+      a lot of <Purple>LEGO games</Purple> 🎮
     </p>
 
     <p class="line-height-relaxed">
@@ -54,6 +54,31 @@
       <Purple>fantasy</Purple> genre, being playing much
       <Purple>The Elder Scrolls V: Skyrim</Purple> ⚔️ and other RPG games.
     </p>
+
+    <p class="line-height-relaxed">
+      i'm also an <Purple>arch user</Purple> btw and a <Purple>big terminal guy</Purple> ❤️
+    </p>
+
+    <div>
+      <p>
+        <Purple>OS + Kernel:</Purple> Arch Linux + Linux TKG BORE (latest/modified)
+      </p>
+      <p>
+        <Purple>WM + Compositor:</Purple> bspwm + picom (modified)
+      </p>
+      <p>
+        <Purple>Shell:</Purple> zsh (custom)
+      </p>
+      <p>
+        <Purple>Terminal:</Purple> Alacritty (modified)
+      </p>
+      <p>
+        <Purple>Browser:</Purple> Ablaze Floorp (firefox fork) & Google Chrome
+      </p>
+      <p>
+        <Purple>IDE:</Purple> Neovim (yeh turned into an IDE lmao)
+      </p>
+    </div>
   </article>
 
   <Divider />
