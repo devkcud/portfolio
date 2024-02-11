@@ -1,8 +1,6 @@
 <script>
-  import Button from '$lib/components/Button.svelte';
   import Divider from '$lib/components/Divider.svelte';
   import Purple from '$lib/components/Purple.svelte';
-  import { HomeSolid } from 'flowbite-svelte-icons';
 </script>
 
 <svelte:head>
