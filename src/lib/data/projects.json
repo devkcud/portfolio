@@ -2,7 +2,7 @@
   {
     "name": "Portfolio",
     "about": "This site :)",
-    "langs": ["Svelte", "TypeScript", "TailwindCSS"],
+    "langs": ["Svelte", "TypeScript", "custom:UnoCSS"],
     "deploy": "https://devkcud.vercel.app/"
   },
   {
