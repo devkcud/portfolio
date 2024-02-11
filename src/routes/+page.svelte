@@ -1,6 +1,5 @@
 <script lang="ts">
   import Button from '$lib/components/Button.svelte';
-  import Link from '$lib/components/Link.svelte';
   import Purple from '$lib/components/Purple.svelte';
 </script>
 
@@ -9,7 +8,7 @@
 </svelte:head>
 
 <section class="flex flex-col gap-4">
-  <h1 class="fw-400 text-5xl">Hey, I'm <Link href="https://github.com/devkcud">André</Link>!</h1>
+  <h1 class="fw-400 text-5xl">Hey, I'm <Purple>André</Purple>!</h1>
 
   <i>aka <Purple>devkcud</Purple> and <Purple>Pato</Purple>.</i>
 
