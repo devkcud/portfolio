@@ -1,6 +1,8 @@
 <script lang="ts">
   export let name: string;
   export let invert: boolean = false;
+  export let width: number | undefined = 64;
+  export let height: number | undefined = 64;
 
   const iconsURL = 'https://raw.githubusercontent.com/devicons/devicon/master/icons/';
 
@@ -34,6 +36,8 @@
   src={lang.src}
   alt={lang.alt}
   {...$$restProps}
+  {width}
+  {height}
   style="filter: invert({invert ? 1 : 0})"
   loading="lazy"
 />
@@ -41,8 +45,5 @@
 <style>
   img {
     object-fit: contain;
-
-    width: 64px;
-    height: 64px;
   }
 </style>
