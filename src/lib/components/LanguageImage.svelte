@@ -8,12 +8,12 @@
 
   function grabImage(lang: string): { src: string; alt: string } {
     let imageSource: string;
-    let languageName: string = lang.split('-')[0].replaceAll(/^(custom\:)/g, '');
+    let languageName: string = lang.split('-')[0].replaceAll(/^(custom\:)/g, '').split('.')[0];
 
     lang = lang.toLowerCase();
 
     if (lang.includes('custom:')) {
-      imageSource = `/langs/${lang.split(':')[1]}.svg`;
+      imageSource = `/langs/${lang.split(':')[1]}${!lang.includes('.') ? '.svg' : ''}`;
 
       return { src: imageSource, alt: languageName };
     }
