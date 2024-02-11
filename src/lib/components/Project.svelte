@@ -34,6 +34,6 @@
     <Button href="https://github.com/devkcud/{name.replace(/ /g, '-')}" icon={GithubSolid} external>
       GitHub
     </Button>
-    <Button href={deploy} disabled={!deploy} icon={LinkSolid} external>View Deploy</Button>
+    <Button href={deploy} disabled={!deploy} icon={LinkSolid} external>Deploy</Button>
   </div>
 </div>
