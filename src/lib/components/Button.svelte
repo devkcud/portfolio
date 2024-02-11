@@ -3,6 +3,7 @@
   import type { ComponentType } from 'svelte';
 
   export let href: string = '';
+  export let disabled: boolean = false;
   export let center: boolean = false;
   export let external: boolean = false;
   export let icon: ComponentType = href ? LinkSolid : TagSolid;
@@ -14,9 +15,15 @@
     'block',
     'px-2',
     'py-1',
-    'bg-trasparent',
-    'text-purple',
-    href && 'no-underline'
+    'border-none',
+    'outline-none',
+    'bg-transparent',
+    'text-[16px]',
+    !disabled && 'text-purple',
+    !disabled && 'active:scale-90',
+    href && 'no-underline',
+    'transition',
+    ...(disabled ? Array('text-gray-600', 'hover:cursor-not-allowed') : [])
   ];
 </script>
 
