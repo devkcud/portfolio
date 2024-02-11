@@ -56,27 +56,6 @@
     <p class="line-height-relaxed">
       i'm also an <Purple>arch user</Purple> btw and a <Purple>big terminal guy</Purple> ❤️
     </p>
-
-    <div>
-      <p>
-        <Purple>OS + Kernel:</Purple> Arch Linux + Linux TKG BORE (latest/modified)
-      </p>
-      <p>
-        <Purple>WM + Compositor:</Purple> bspwm + picom (modified)
-      </p>
-      <p>
-        <Purple>Shell:</Purple> zsh (custom)
-      </p>
-      <p>
-        <Purple>Terminal:</Purple> Alacritty (modified)
-      </p>
-      <p>
-        <Purple>Browser:</Purple> Ablaze Floorp (firefox fork) & Google Chrome
-      </p>
-      <p>
-        <Purple>IDE:</Purple> Neovim (yeh turned into an IDE lmao)
-      </p>
-    </div>
   </article>
 
   <Divider />
