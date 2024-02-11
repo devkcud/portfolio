@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { twMerge } from 'tailwind-merge';
   import { TagSolid, LinkSolid } from 'flowbite-svelte-icons';
   import type { ComponentType } from 'svelte';
 
@@ -8,6 +9,7 @@
   export let external: boolean = false;
   export let icon: ComponentType = href ? LinkSolid : TagSolid;
   export let onclick: () => void = () => {};
+  export let eclass: string = '';
 
   const classes = [
     'w-fit',
@@ -34,14 +36,14 @@
     {href}
     target={external ? '_blank' : undefined}
     rel={external ? 'noreferrer' : undefined}
-    class={classes.join(' ')}
+    class={twMerge(...classes, eclass)}
   >
     <svelte:component this={icon} size="xs" />
     <slot />
   </a>
 {:else}
   <!-- Only makes sense to add onclick to a button -->
-  <button class={classes.join(' ')} on:click={onclick}>
+  <button class={twMerge(...classes)} on:click={onclick}>
     <svelte:component this={icon} size="xs" />
     <slot />
   </button>

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { GithubSolid } from 'flowbite-svelte-icons';
   import Button from '$lib/components/Button.svelte';
   import Purple from '$lib/components/Purple.svelte';
 </script>
@@ -21,4 +22,8 @@
   <p class="border-t-1 border-t-solid border-white pt-2 px-4 op-30">
     Fullstack/Game Developer from São Paulo, Brazil
   </p>
+
+  <div class="flex justify-center mt-6">
+    <Button eclass="text-green-600" href="https://github.com/devkcud" icon={GithubSolid} external>GitHub</Button>
+  </div>
 </section>
