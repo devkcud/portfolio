@@ -8,7 +8,7 @@
   <title>Home</title>
 </svelte:head>
 
-<section class="flex flex-col gap-4 animate-fade-in">
+<section class="flex flex-col gap-4">
   <h1 class="fw-400 text-5xl">Hey, I'm <Link href="https://github.com/devkcud">André</Link>!</h1>
 
   <i>aka <Purple>devkcud</Purple> and <Purple>Pato</Purple>.</i>
