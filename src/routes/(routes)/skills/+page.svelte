@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Button from '$lib/components/Button.svelte';
   import Divider from '$lib/components/Divider.svelte';
   import LanguageImage from '$lib/components/LanguageImage.svelte';
   import Purple from '$lib/components/Purple.svelte';
@@ -85,7 +84,7 @@
 <div class="rotate-7 w-full my-16 overflow-hidden sider-blur">
   <div class="inline-flex gap-8 animate-slide">
     {#each images as image}
-      <LanguageImage name={image.name} class={image.invert ? 'invert' : ''} />
+      <LanguageImage name={image.name} invert={image.invert} />
     {/each}
   </div>
 </div>
@@ -133,7 +132,7 @@
       {:else}
         {#each filteredImages as image}
           <li>
-            <LanguageImage name={image.name} class={image.invert ? 'invert' : ''} />
+            <LanguageImage name={image.name} invert={image.invert} />
           </li>
         {/each}
       {/if}

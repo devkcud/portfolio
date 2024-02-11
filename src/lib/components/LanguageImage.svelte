@@ -1,5 +1,6 @@
 <script lang="ts">
   export let name: string;
+  export let invert: boolean = false;
 
   const iconsURL = 'https://raw.githubusercontent.com/devicons/devicon/master/icons/';
 
@@ -29,7 +30,13 @@
   $: lang = grabImage(name);
 </script>
 
-<img src={lang.src} alt={lang.alt} {...$$restProps} loading="lazy" />
+<img
+  src={lang.src}
+  alt={lang.alt}
+  {...$$restProps}
+  style="filter: invert({invert ? 1 : 0})"
+  loading="lazy"
+/>
 
 <style>
   img {
