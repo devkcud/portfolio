@@ -105,7 +105,7 @@
   },
   {
     "name": "custom:supabase",
-    "aliases": [],
+    "aliases": ["auth"],
     "invert": false,
     "type": "db"
   },
