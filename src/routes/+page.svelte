@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { GithubSolid } from 'flowbite-svelte-icons';
+  import { GithubSolid, PhoneSolid } from 'flowbite-svelte-icons';
   import Button from '$lib/components/Button.svelte';
   import Purple from '$lib/components/Purple.svelte';
 </script>
@@ -23,7 +23,8 @@
     Fullstack/Game Developer from São Paulo, Brazil
   </p>
 
-  <div class="flex justify-center mt-6">
-    <Button eclass="text-white" href="https://github.com/devkcud" icon={GithubSolid} external>GitHub</Button>
+  <div class="flex justify-center gap-8 mt-6">
+    <Button href="https://github.com/devkcud" icon={GithubSolid} external>GitHub</Button>
+    <Button href="/contact" icon={PhoneSolid}>Contact</Button>
   </div>
 </section>
