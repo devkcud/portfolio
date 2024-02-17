@@ -11,6 +11,11 @@
   export let onclick: undefined | (() => void) = undefined;
   export let eclass: string = '';
 
+  if (disabled) {
+    href = '';
+    onclick = undefined;
+  }
+
   const classes = [
     'w-fit',
     center && 'mx-auto',

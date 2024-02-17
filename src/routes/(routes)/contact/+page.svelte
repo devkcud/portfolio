@@ -101,8 +101,12 @@
   <Divider />
 
   <div>
-    <Button icon={DownloadSolid} href="/cvs/andre-albanese.pt.pdf">PDF: Currículo (Português)</Button>
-    <Button icon={DownloadSolid} href="/cvs/andre-albanese.en.pdf">PDF: Resume (English)</Button>
-    <Button disabled icon={DownloadSolid}>PDF: Резюме (Русский)</Button>
+    <Button icon={DownloadSolid} href="/cvs/andre-albanese.pt.pdf" external>
+      PDF: Currículo (Português)
+    </Button>
+    <Button icon={DownloadSolid} href="/cvs/andre-albanese.en.pdf" external>
+      PDF: Resume (English)
+    </Button>
+    <Button disabled icon={DownloadSolid} href="/cvs/andre-albanese.ru.pdf" external>PDF: Резюме (Русский)</Button>
   </div>
 </section>
