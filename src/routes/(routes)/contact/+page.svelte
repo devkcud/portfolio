@@ -54,7 +54,7 @@
 <section class="mt-8 flex flex-col gap-4">
   <h2>Email <span class="op-50 text-sm fw-400">all clickable</span></h2>
 
-  <div class="flex gap-8">
+  <div class="flex gap-8 flex-wrap">
     {#each mails as mail}
       <div class="flex">
         <Button icon={EnvelopeSolid} href="mailto:{mail}">
@@ -80,7 +80,7 @@
 
   <h2>Social <span class="op-50 text-sm fw-400">talk to me with no delay</span></h2>
 
-  <div class="flex justify-center gap-8">
+  <div class="flex justify-center gap-8 flex-wrap">
     {#each socials as { name, href, icon, copytext }}
       <div class="flex">
         {#if href}
@@ -101,8 +101,8 @@
   <Divider />
 
   <div>
-    <Button icon={DownloadSolid} href="/cvs/andre-albanese.pt.pdf">PDF: Currículo (CV Portuguese version)</Button>
-    <Button icon={DownloadSolid} href="/cvs/andre-albanese.en.pdf">PDF: Resume (CV English version)</Button>
-    <Button disabled icon={DownloadSolid}>PDF: Резюме (CV Russian version) - On the way!</Button>
+    <Button icon={DownloadSolid} href="/cvs/andre-albanese.pt.pdf">PDF: Currículo (Português)</Button>
+    <Button icon={DownloadSolid} href="/cvs/andre-albanese.en.pdf">PDF: Resume (English)</Button>
+    <Button disabled icon={DownloadSolid}>PDF: Резюме (Русский)</Button>
   </div>
 </section>

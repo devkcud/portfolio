@@ -42,8 +42,8 @@
 
     <p class="line-height-relaxed">
       🥷 Even though I do all of that, I'm still a person that likes chilling sometimes. 🎥 I'm into
-      all kinda of stuff, like <Purple>games and movies/series</Purple>. I'm currently playing
-      a lot of <Purple>LEGO games</Purple> 🎮
+      all kinda of stuff, like <Purple>games and movies/series</Purple>. I'm currently playing a lot
+      of <Purple>LEGO games</Purple> 🎮
     </p>
 
     <p class="line-height-relaxed">
@@ -68,14 +68,16 @@
 
     <p class="line-height-relaxed">
       🧐 I reeeeeeally like learning languages, and I'm currently learning
-      <Purple>Russian</Purple> 🇷🇺, which is a <Purple>very beautiful</Purple>
-      language. I don't know that much to speak to a native, but I'm learning. 😊
+      <Purple>Russian</Purple> 🇷🇺 and <Purple>Polish</Purple> 🇵🇱, which are both
+      <Purple>very beautiful</Purple> languages. I don't know that much to speak to a native, but I'm
+      learning. 😊
     </p>
 
     <p class="line-height-relaxed">
       Currently, I know <Purple>English</Purple> 🇺🇸, <Purple>Portuguese</Purple> 🇧🇷 and a bit of
-      <Purple>Spanish</Purple> 🇪🇸. I plan on learning <Purple>French</Purple> 🇫🇷 and
-      <Purple>Russian</Purple> 🇷🇺 before 2025.
+      <Purple>Spanish</Purple> 🇪🇸. I plan on learning <Purple>Polish</Purple> 🇵🇱 and
+      <Purple>Russian</Purple> 🇷🇺 before 2025 & <Purple>French</Purple> 🇫🇷 and
+      <Purple>German</Purple> 🇩🇪 before 2026.
     </p>
   </article>
 </div>
