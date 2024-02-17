@@ -24,6 +24,6 @@
   </p>
 
   <div class="flex justify-center mt-6">
-    <Button eclass="text-green-600" href="https://github.com/devkcud" icon={GithubSolid} external>GitHub</Button>
+    <Button eclass="text-white" href="https://github.com/devkcud" icon={GithubSolid} external>GitHub</Button>
   </div>
 </section>

@@ -8,7 +8,7 @@
   export let center: boolean = false;
   export let external: boolean = false;
   export let icon: ComponentType = href ? LinkSolid : TagSolid;
-  export let onclick: () => void = () => {};
+  export let onclick: undefined | (() => void) = undefined;
   export let eclass: string = '';
 
   const classes = [
@@ -24,7 +24,9 @@
     'bg-transparent',
     'text-[16px]',
     !disabled && 'text-purple',
-    !disabled && 'active:scale-90',
+    !disabled && (href || onclick) && 'active:scale-95',
+    !disabled && (href || onclick) && 'hover:scale-105',
+    !disabled && (href || onclick) && 'hover:cursor-pointer',
     href && 'no-underline',
     'transition',
     ...(disabled ? Array('text-gray-600', 'hover:cursor-not-allowed') : [])
