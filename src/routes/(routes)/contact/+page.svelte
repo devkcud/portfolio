@@ -57,7 +57,7 @@
   <div class="flex gap-8 flex-wrap">
     {#each mails as mail}
       <div class="flex">
-        <Button icon={EnvelopeSolid} href="mailto:{mail}">
+        <Button icon={EnvelopeSolid} href="mailto:{mail}" external>
           {mail}
         </Button>
 
@@ -84,7 +84,7 @@
     {#each socials as { name, href, icon, copytext }}
       <div class="flex">
         {#if href}
-          <Button {icon} {href}>
+          <Button {icon} {href} external>
             {name}
           </Button>
         {:else}
