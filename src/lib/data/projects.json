@@ -8,7 +8,18 @@
   {
     "name": "Kubic",
     "about": "A logical cube-based game built for a school project.",
-    "langs": [{ "name": "custom:gml", "invert": true }]
+    "langs": [
+      {
+        "name": "custom:gml",
+        "invert": true
+      }
+    ]
+  },
+  {
+    "name": "Skill Icons Web",
+    "about": "Unofficial \"Image Builder\" for Skill Icons.",
+    "langs": ["Svelte", "TypeScript", "tailwindcss"],
+    "deploy": "https://skill-icons-web.vercel.app/"
   },
   {
     "name": "DuckLearn",
@@ -17,7 +28,10 @@
       "Svelte",
       "TypeScript",
       "TailwindCSS",
-      { "name": "Prisma", "invert": true },
+      {
+        "name": "Prisma",
+        "invert": true
+      },
       "SQLite",
       "custom:Lucia.png"
     ]
@@ -58,17 +72,32 @@
   {
     "name": "htodo",
     "about": "Simple and efficient way to manage tasks via the terminal.",
-    "langs": [{ "name": "Rust", "invert": true }]
+    "langs": [
+      {
+        "name": "Rust",
+        "invert": true
+      }
+    ]
   },
   {
     "name": "Pun",
     "about": "CLI tool for Linux that shows information about the system.",
-    "langs": [{ "name": "Rust", "invert": true }]
+    "langs": [
+      {
+        "name": "Rust",
+        "invert": true
+      }
+    ]
   },
   {
     "name": "bfree",
     "about": "Similar tool to 'free' but with easier usage.",
-    "langs": [{ "name": "Rust", "invert": true }]
+    "langs": [
+      {
+        "name": "Rust",
+        "invert": true
+      }
+    ]
   },
   {
     "name": "Aeroporto ACAD",
@@ -78,6 +107,11 @@
   {
     "name": "git-prompt.zsh",
     "about": "Git prompt for ZSH.",
-    "langs": [{ "name": "Bash", "invert": true }]
+    "langs": [
+      {
+        "name": "Bash",
+        "invert": true
+      }
+    ]
   }
 ]

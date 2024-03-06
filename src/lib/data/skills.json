@@ -7,25 +7,19 @@
   },
   {
     "name": "svelte",
-    "aliases": [
-      "sveltekit"
-    ],
+    "aliases": ["sveltekit"],
     "invert": false,
     "type": "frontend"
   },
   {
     "name": "react",
-    "aliases": [
-      "reactjs"
-    ],
+    "aliases": ["reactjs"],
     "invert": false,
     "type": "frontend"
   },
   {
     "name": "nextjs",
-    "aliases": [
-      "react"
-    ],
+    "aliases": ["react"],
     "invert": true,
     "type": "frontend"
   },
@@ -43,9 +37,7 @@
   },
   {
     "name": "go",
-    "aliases": [
-      "golang"
-    ],
+    "aliases": ["golang"],
     "invert": false,
     "type": "backend"
   },
@@ -57,43 +49,31 @@
   },
   {
     "name": "express",
-    "aliases": [
-      "js"
-    ],
+    "aliases": ["js"],
     "invert": true,
     "type": "backend"
   },
   {
     "name": "flask",
-    "aliases": [
-      "python"
-    ],
+    "aliases": ["python"],
     "invert": true,
     "type": "backend"
   },
   {
     "name": "nodejs",
-    "aliases": [
-      "js"
-    ],
+    "aliases": ["js"],
     "invert": false,
     "type": "backend"
   },
   {
     "name": "javascript",
-    "aliases": [
-      "js",
-      "ecmascript",
-      "nodejs"
-    ],
+    "aliases": ["js", "ecmascript", "nodejs"],
     "invert": false,
     "type": "backend"
   },
   {
     "name": "typescript",
-    "aliases": [
-      "ts"
-    ],
+    "aliases": ["ts"],
     "invert": false,
     "type": "backend"
   },
@@ -111,18 +91,13 @@
   },
   {
     "name": "firebase-plain",
-    "aliases": [
-      "firestore",
-      "fireauth"
-    ],
+    "aliases": ["firestore", "fireauth"],
     "invert": false,
     "type": "db"
   },
   {
     "name": "mongodb",
-    "aliases": [
-      "mongoose"
-    ],
+    "aliases": ["mongoose"],
     "invert": false,
     "type": "db"
   },
@@ -146,11 +121,7 @@
   },
   {
     "name": "custom:lucia.png",
-    "aliases": [
-      "luciaauth",
-      "lucia-auth",
-      "auth"
-    ],
+    "aliases": ["luciaauth", "lucia-auth", "auth"],
     "invert": false,
     "type": "backend"
   },
@@ -168,9 +139,7 @@
   },
   {
     "name": "bash",
-    "aliases": [
-      "shell"
-    ],
+    "aliases": ["shell"],
     "invert": false,
     "type": "system"
   },
@@ -200,9 +169,7 @@
   },
   {
     "name": "sass",
-    "aliases": [
-      "scss"
-    ],
+    "aliases": ["scss"],
     "invert": false,
     "type": "frontend"
   },
@@ -214,9 +181,7 @@
   },
   {
     "name": "bootstrap",
-    "aliases": [
-      "css"
-    ],
+    "aliases": ["css"],
     "invert": false,
     "type": "frontend"
   },
@@ -252,26 +217,19 @@
   },
   {
     "name": "custom:nvim",
-    "aliases": [
-      "neovim"
-    ],
+    "aliases": ["neovim"],
     "invert": false,
     "type": "tool"
   },
   {
     "name": "vscode",
-    "aliases": [
-      "visual studio code",
-      "vs code"
-    ],
+    "aliases": ["visual studio code", "vs code"],
     "invert": false,
     "type": "tool"
   },
   {
     "name": "markdown",
-    "aliases": [
-      "mdx"
-    ],
+    "aliases": ["mdx"],
     "invert": true,
     "type": "tool"
   },
@@ -289,10 +247,7 @@
   },
   {
     "name": "custom:gml",
-    "aliases": [
-      "gamemaker",
-      "game maker"
-    ],
+    "aliases": ["gamemaker", "game maker"],
     "invert": true,
     "type": "tool"
   },

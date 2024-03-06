@@ -8,7 +8,10 @@
 
   function grabImage(lang: string): { src: string; alt: string } {
     let imageSource: string;
-    let languageName: string = lang.split('-')[0].replaceAll(/^(custom\:)/g, '').split('.')[0];
+    let languageName: string = lang
+      .split('-')[0]
+      .replaceAll(/^(custom\:)/g, '')
+      .split('.')[0];
 
     lang = lang.toLowerCase();
 

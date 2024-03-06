@@ -107,6 +107,8 @@
     <Button icon={DownloadSolid} href="/cvs/andre-albanese.en.pdf" external>
       PDF: Resume (English)
     </Button>
-    <Button disabled icon={DownloadSolid} href="/cvs/andre-albanese.ru.pdf" external>PDF: Резюме (Русский)</Button>
+    <Button disabled icon={DownloadSolid} href="/cvs/andre-albanese.ru.pdf" external>
+      PDF: Резюме (Русский)
+    </Button>
   </div>
 </section>
