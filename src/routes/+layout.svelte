@@ -1,8 +1,7 @@
 <script>
-  import 'virtual:uno.css';
-  import '$lib/styles/global.css';
+  import '../app.css';
 </script>
 
-<main class="min-h-screen flex flex-col justify-center items-center">
+<main class="p-4">
   <slot />
 </main>
